@@ -1,0 +1,135 @@
+:root {
+  --main-color: #eac74d;
+  --titre-color: #4d79ff;
+  --bg-th-hover: #fff8dc;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  max-width: 700px;
+  margin : auto;
+  background-color: white;
+  border-radius: 20px;
+ padding: 10px;
+
+}
+.header {
+  background-color: var(--main-color);
+ color : white;
+ padding : 20px ;
+ border-radius: 20px;
+
+
+}
+.header a {
+  color : white;
+  text-decoration-line: none;
+  font-size: larger;
+}
+.header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  list-style: none;
+  margin-right : 30px;
+}
+.header a:hover {
+    opacity: 0.8;
+}
+
+h2 {
+  color:var(--titre-color);
+  
+  padding: 10px;
+  font-weight: 900;
+}
+section {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.s1 {
+  border-bottom: none;
+}
+p, li {
+    list-style: none;
+    line-height: 1.7rem;
+}
+a { 
+    text-decoration-line: none;
+    color: green ;
+}
+ section a:hover {
+    text-decoration: underline; }
+fieldset {
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+
+.contact legend {
+    font-weight: bold;
+    color: var(--main-color);
+    padding: 0 10px;
+    font-size: 1.4em;
+    margin-bottom: 30px ;
+    margin-left: 30px;
+  
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 5px;
+    box-sizing: border-box; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+input:focus,
+textarea:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 5px rgba(234, 199, 77, 0.5);
+    outline: none;
+}
+button[type="submit"] {
+    background-color: var(--titre-color);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.1s;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+button[type="submit"]:hover {
+    background-color: #3b60d4; 
+    transform: translateY(-2px);
+}
+button[type="submit"]:active {
+    transform: translateY(0);
+}
+.footer {
+  background-color: var(--main-color);
+  padding : 30px ;
+ border-bottom-left-radius: 20px; 
+ border-bottom-right-radius: 20px;
+ color: white;
+ text-align: center;
+}
+
