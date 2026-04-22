@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Quicksand:wght@300..700&family=Share+Tech&family=Special+Gothic+Expanded+One&display=swap');
+body{
+    background-color: black;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 40px;
+    padding: 20px;
+}
+header span a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: 'Special Gothic Expanded One'
+}
+header span input{
+    background-color: transparent;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-family: special gothic expanded one;
+}
+header h1{
+     font-family: 'Special Gothic Expanded One', cursive;
+        font-size: 36px;
+}
