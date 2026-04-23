@@ -53,6 +53,11 @@ header h1{
     border: 2px solid black;
     transition:  0.3s ;
 }
+B {
+    font-family: 'Special Gothic Expanded One', cursive;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
 .bc {
     display: flex;
     align-items: center;
