@@ -18,48 +18,89 @@ header span a{
     color: #000;
     text-decoration: none;
     margin-left: 20px;
-    font-family: 'Special Gothic Expanded One'
+    font-family: 'Special Gothic Expanded One', cursive;
 }
-legend{
-    display: flex;
-    
-    font-family:  cairo ;
-    font-size: 40px;
-    justify-content: center;
-    align-items: center;
-    margin: auto
+main h3{
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Cairo', sans-serif;
 }
-form{
-    display: flex;
-    flex-direction: column;
-     font-family: special gothic expanded one;
-     font-size: 20px;
-    border-radius: 40px;
-    padding: 20px;
-    gap: 25px;
-    border: #000 solid 1px;
-    margin: auto;
-    width: 50%;
+.ou {
+    font-family: 'Special Gothic Expanded One', cursive;
+    font-size: 50px;
 }
-input  {
-    width: 70%;
-   margin-left: 20px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #000;
+main p {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Quicksand', sans-serif;
 }
-textarea{
-    resize: none;
-    margin-left: 10px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #000;
+main p a {
+    color: #000;
+    font-family: 'Special Gothic Expanded One', cursive;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: solid 2px #000;
 }
-button{
-display: inline;
-    border-radius: 4px;
+main p a:hover {
+    color: #000;
+    font-family: 'Special Gothic Expanded One', cursive;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: solid 2px #000;
     background-color: #000;
     color: #fff;
-    font-family: special gothic expanded one;
+}
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+main form div input {
+    margin-left: 50px ;
+    font-family: 'Cairo', sans-serif;
+    border: none;
+    border-bottom: #000 solid 2px;
+    outline: none;
+}
+main form textarea {
+    font-family: 'Cairo', sans-serif;
+    margin-left: 50px ;
+    resize: none;
+    border: none;
+    border-bottom: #000 solid 2px;
+    outline: none;
     
+}
+main form button {
+    font-family: 'Special Gothic Expanded One', cursive;
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    width: 100px;
+
+}
+main form button:hover {
+    font-family: 'Special Gothic Expanded One', cursive;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 100px;
+    border: solid 2px #000; 
+}
+
+
+footer{
+    text-align: center;
+    margin-top: 100px;
+    background-color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
 }

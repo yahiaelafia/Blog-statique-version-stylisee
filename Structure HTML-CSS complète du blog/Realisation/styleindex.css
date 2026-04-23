@@ -48,6 +48,7 @@ header h1{
 .button:hover {
     display: flex;
     color: black;
+    padding: 12px 22px;
     background-color:transparent;
     border: 2px solid black;
     transition:  0.3s ;
