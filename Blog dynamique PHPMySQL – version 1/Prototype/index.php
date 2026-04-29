@@ -7,7 +7,7 @@ $products = Article::all();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylearticle.css">
+    <link rel="stylesheet" href="styleindex.css">
         <link rel="icon"  href="assets/Gemini_Generated_Image_p0lvyep0lvyep0lv.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">

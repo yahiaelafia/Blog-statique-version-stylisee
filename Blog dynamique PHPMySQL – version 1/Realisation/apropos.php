@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>X-BRAND</title>
     <link rel="icon"  href="assets/Gemini_Generated_Image_p0lvyep0lvyep0lv.png">
-    <link rel="stylesheet" href="styleindex.css">
+    <link rel="stylesheet" href="styleapropos.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>

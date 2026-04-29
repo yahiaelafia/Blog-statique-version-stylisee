@@ -4,25 +4,15 @@ require_once 'article.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $title = $_POST['title'];
     $price = $_POST['price'];
-    if (isset($_FILES['image']) && $_FILES['image']['error'] === 0) {
-        
-        $imageFile = $_FILES['image'];
-        $imageName = time() . '_' . $imageFile['name']; 
-        $targetDir = "uploads/";
-        $targetPath = $targetDir . $imageName;
-        if (!is_dir($targetDir)) {
-            mkdir($targetDir, 0777, true);
-        }
-        if (move_uploaded_file($imageFile['tmp_name'], $targetPath)) {
-            if (Article::create($title, $price, $targetPath)) {
-                header("Location: index.php");
+    $imageName = $_FILES['image']['name'];
+    $targetPath = "uploads2/" . $imageName;
+    if (move_uploaded_file($_FILES['image']['tmp_name'], $targetPath)) {
+        Article::create($title, $price, $targetPath);
+        header("Location: index.php");
                 exit();
-            }
-        } else {
-            echo "Ereurr Folder";
-        }
-    } else {
-        echo "Image pas corect";
+    }
+    else {
+        echo "Le produit pas ajoute" ;
     }
 }
 ?>
