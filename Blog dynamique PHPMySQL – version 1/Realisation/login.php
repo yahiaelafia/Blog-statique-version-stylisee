@@ -1,14 +1,30 @@
 <?php
+session_start() ;
 require_once 'db.php' ;
+require_once 'users.php';
 if ($_SERVER["REQUEST_METHOD"]=="POST") {
     $email = $_POST["email"];
     $password = $_POST["password"];
     if (!empty($email) && !empty($password)) {
         if ($email === "admin@x-brand.com" && $password === "12345") {
+            $_SESSION["email"] = $email;
+            $_SESSION["password"] = $password;
         header("Location: create.php") ;
         exit ;
-        } else {
-            echo "Le Mot de pass est incorecrt" ;
+        } 
+            $db = new database();
+            $db = $db->getConnection();
+            $user = new Users($db);
+            $logeduser = $user->login($email,$password) ;
+            if($logeduser){
+                $_SESSION["id"] = $logeduser["id"];
+                $_SESSION["email"] = $logeduser["email"];
+                $_SESSION["password"] = $logeduser["password"];
+                $_SESSION["username"] = $logeduser["username"];
+                header("Location: index.php") ;
+                exit ;
+
+              
         }
         
     }
@@ -47,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
 
                 <div class="form-group">
                     <label for="password">Mot de passe</label>
-                    <input type="password" id="password" name="password" placeholder="••••••••" required>
+                    <input type="password" id="password" name="password" placeholder="• • • • • • " required>
                 </div>
 
                 <button type="submit" class="btn-login">
@@ -56,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
             </form>
 
             <div class="links">
-                <p><a href="index.php">Retour à l'accueil</a></p>
+                <p>Pas un copmte ?       <a href="registre.php">Créer le compte</a></p>
             </div>
         </div>
     </main>

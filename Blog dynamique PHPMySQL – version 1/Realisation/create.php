@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $targetPath = "uploads2/" . $imageName;
     if (move_uploaded_file($_FILES['image']['tmp_name'], $targetPath)) {
         Article::create($title, $price, $targetPath);
-        header("Location: index.php");
+        header("Location: create.php");
                 exit();
     }
     else {
@@ -24,7 +24,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Ajouter un Produit</title>
 </head>
 <body>
-    <header>    <h1>Ajouter un produit </h1>
+    <header>    
+        <h1>Ajouter un produit </h1>
+        <a href="dashbord.php">Modification</a>
 </header>
     <form   action="" method="POST" enctype="multipart/form-data" >
         

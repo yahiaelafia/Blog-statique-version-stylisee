@@ -1,6 +1,15 @@
 <?php
+session_start() ;
+require_once 'db.php' ;
 require_once 'article.php' ;
 $products = Article::all();
+if (isset ($_SESSION["id"])) {
+    $islogedin = true ;
+    $username = htmlspecialchars($_SESSION["username"]) ;
+}else {
+    $islogedin = false ;
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,11 +28,14 @@ $products = Article::all();
             <input type="search" placeholder="Rechercher...">
             <a href="apropos.php">À propos</a>
             <a href="contact.php">Contact</a>
-            <a href="login.php" ><i class="fa-solid fa-circle-user"></i></a>
-
         </span>
     </header>
         <main>
+            <?php if ($islogedin): ?>
+        <div class="user-welcome">
+            <p>Bienvenue, <?php echo htmlspecialchars($username); ?>!</p>
+        </div>
+    <?php endif; ?>
     <div class="toutarticle">
         <?php foreach($products as $prod):?>
         <article>

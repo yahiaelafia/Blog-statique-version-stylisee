@@ -10,9 +10,10 @@
 </head>
 <body>
     <header>
-        <h1>X-BRAND</h1>
+    <a href="index.php">Retour</a>
     </header>
     <main>
+        <h1>X-BRAND</h1>
         <h2>À propos</h2>
 <p>
     Bienvenue chez <b class="B">X-BRAND</b>, votre destination privilégiée pour une mode audacieuse et contemporaine. 
@@ -23,11 +24,7 @@
         <span class="h3">
         <h3>Révélez votre style avec X-BRAND</h3>
     </span>
-    <br><br>
-    <div class="bc">
-        <a class="button" href="index.php">Découvrir la Collection</a>
-        <a class="button2" href="contact.php">Nous contacter</a>
-    </div>
+
     </main>
     <br>
 <footer>

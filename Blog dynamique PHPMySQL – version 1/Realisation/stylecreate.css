@@ -6,7 +6,10 @@ body{
     font-family: cairo;
 }
 header {
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
     text-align: center;
      font-family: 'Special Gothic Expanded One', cursive;
 

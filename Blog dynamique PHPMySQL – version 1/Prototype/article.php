@@ -21,12 +21,6 @@ class Article {
 
         ]);
     }
-    public static function delete($id) {
-        $db = new database();
-        $conn = $db->getConnection();
-        $sql = "DELETE FROM products WHERE id = ?";
-        $stmt = $conn->prepare($sql);
-        return $stmt->execute([$id]);
-    }
+   
 }
 ?>
