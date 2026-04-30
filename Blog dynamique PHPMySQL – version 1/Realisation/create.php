@@ -21,12 +21,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="stylecreate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Ajouter un Produit</title>
 </head>
 <body>
     <header>    
         <h1>Ajouter un produit </h1>
         <a href="dashbord.php">Modification</a>
+                    <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+
 </header>
     <form   action="" method="POST" enctype="multipart/form-data" >
         

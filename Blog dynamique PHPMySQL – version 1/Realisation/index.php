@@ -6,9 +6,7 @@ $products = Article::all();
 if (isset ($_SESSION["id"])) {
     $islogedin = true ;
     $username = htmlspecialchars($_SESSION["username"]) ;
-}else {
-    $islogedin = false ;
-    }
+}
 
 ?>
 <!DOCTYPE html>
@@ -28,12 +26,13 @@ if (isset ($_SESSION["id"])) {
             <input type="search" placeholder="Rechercher...">
             <a href="apropos.php">À propos</a>
             <a href="contact.php">Contact</a>
+            <a href="logout.php"><i class="fa-solid fa-right-from-bracket"></i></a>
         </span>
     </header>
         <main>
             <?php if ($islogedin): ?>
         <div class="user-welcome">
-            <p>Bienvenue, <?php echo htmlspecialchars($username); ?>!</p>
+            <p>Bienvenue, <span><?php echo htmlspecialchars($username); ?></span>!</p>
         </div>
     <?php endif; ?>
     <div class="toutarticle">
